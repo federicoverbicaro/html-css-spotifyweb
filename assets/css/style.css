@@ -151,12 +151,12 @@ img.img-profile {
     justify-content: center;
 }
 /* media query */
-
 .name,
 .name2,
 hr{
     display: none;
 }
+/************/
 
 /* MAIN */
 .row1-main {
@@ -295,11 +295,14 @@ hr{
 .play {
     max-width: 35%;
 }
+.play{
+    justify-content: center;
+    flex-grow: 1;
+}
 
 .icon {
     justify-content: space-between;
-    gap: 10px;
-    padding-top: 10px;
+    gap: 7px;
 }
 
 .audio {
@@ -325,11 +328,14 @@ figure.img-footer div>span {
 
 .heart {
     align-self: center;
+    margin-left: 20px;
 }
 
 .tempo-bar {
+    justify-content: center;
     align-items: center;
     height: 100%;
+    width: 100%;
 }
 
 .current-time,
@@ -355,13 +361,15 @@ figure.img-footer div>span {
     margin-inline: 5px;
     
 }
+
 /* media query */
+.tempo-bar{
+    display: none;
+}
 .progress-bar1{
     display: none;
 }
 /*  */
-
-
 
 .audio {
     width: 20%;
@@ -384,6 +392,7 @@ figure.img-footer div>span {
 
 /* media query 576px*/
 @media screen and (min-width: 576px) {
+
 
     /* HEADER */
     .row1-header {
@@ -435,6 +444,7 @@ figure.img-footer div>span {
         padding-inline: 5px;
         color: white;
         display: block;
+        overflow: scroll;
     }
 
     .text-playlist ul {
@@ -513,9 +523,15 @@ figure.img-footer div>span {
     }
 
     /* FOOTER */
+    .row1-footer{
+        gap:0px
+    }
     .brano,
     .play {
         max-width: 40%;
+    }
+    .play{
+        flex-grow: 1;
     }
 
     .audio {
@@ -525,11 +541,21 @@ figure.img-footer div>span {
     .brano {
         gap: 20px;
     }
+    .img-footer {
+        align-items: center;
+        width: 100%;
+    }
 
     .icon {
+        width: 50%;
+        margin: 0 auto;
         justify-content: space-between;
         padding-top: 10px
     }
+    .tempo-bar{
+        display: flex;
+    }
+   
     .progress-bar {
         width: 100%;
         height: 10%;
@@ -558,29 +584,31 @@ figure.img-footer div>span {
         justify-content: start;
     }
 
-
-
-
-
-
-
 }
 
 
 
 /* media query 768px  */
 
-@media screen and (min-width:768px) {}
+@media screen and (min-width:768px) {
+
+    /* FOOTER */
+    .icon{
+        width: 50%;
+        margin: 0 auto;
+    }
+
+}
 
 
 
 
 
 /* media query 960px */
-/* esercizio: 1140px*/
+
 @media screen and (min-width:992px) {}
 
 
 /* media query 180px */
-/* esercizio: 1140px*/
+
 @media screen and (min-height: 180px) {}

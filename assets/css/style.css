@@ -1,4 +1,5 @@
 * {
+    
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -311,13 +312,14 @@ hr {
 }
 
 .brano,
-.play {
-    max-width: 35%;
+.audio {
+    width: 25%;
 }
 
 .play {
     justify-content: center;
     flex-grow: 1;
+    width: 50%;
 }
 
 .icon {
@@ -325,25 +327,34 @@ hr {
     gap: 7px;
 }
 
-.audio {
-    max-width: 40%;
-}
-
 .img-footer {
     align-items: center;
 }
 
-figure.img-footer div>span:first-child {
-    color: white;
-    font-size: 80%;
-
+.text-img-footer{
+    justify-content: flex-start;
+    align-items: center;
+    width: 30%;
+}
+.text-img-footer ul{
+   
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+.text-img-footer ul li {
+    list-style-type: none;
 }
 
-figure.img-footer div>span {
-    color: #7a7a7a;
-    font-size: 60%;
-    margin-left: 3px;
-
+.text-img-footer ul li a{
+    list-style-type: none;
+    color: white;
+    opacity: 0.7;
+    text-decoration: none;
+}
+.text-img-footer ul li:first-child{
+opacity: 1;
+color: white;
 }
 
 .heart {
@@ -465,6 +476,15 @@ span.name:hover {
 
 
 /* FOOTER */
+        
+.play-xl:hover{
+    transform: scale(1.4);
+}
+
+.text-img-footer ul li a:hover {
+    text-decoration: underline;
+  opacity: 1;
+}
 .heart:hover {
     color: white;
     opacity: 1;
@@ -595,7 +615,7 @@ span.name:hover {
     .text-playlist>h3 {
         color: white;
         font-size: 10px;
-        padding-block: 5px;
+        margin-block:25px;
     }
 
     .text-playlist2 ul li>span {
@@ -682,11 +702,6 @@ span.name:hover {
 
     .brano {
         gap: 20px;
-    }
-
-    .img-footer {
-        align-items: center;
-        width: 100%;
     }
 
     .icon {
@@ -871,11 +886,39 @@ span.name:hover {
     }
 
     /* FOOTER */
+    .text-img-footer{
+        justify-content: flex-start;
+        align-items: center;
+        width: 30%;
+    }
+    .text-img-footer ul{
+       
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+    }
+    .text-img-footer ul li {
+        list-style-type: none;
+    }
+
+    .text-img-footer ul li a{
+        list-style-type: none;
+        color: white;
+        opacity: 0.7;
+        text-decoration: none;
+    }
+    .text-img-footer ul li:first-child{
+    opacity: 1;
+    color: white;
+    }
+    
     .heart {
         flex-direction: row;
         gap: 10px;
         opacity: 0.7;
+         margin-left: 0px;
     }
+   
 
 
 
@@ -909,6 +952,11 @@ span.name:hover {
     }
     .text-nav {
         font-size: 20px;
+    }
+    /* FOOTER */
+
+    .text-img-footer {
+        width: 20%;
     }
 }
 

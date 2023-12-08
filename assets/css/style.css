@@ -311,15 +311,20 @@ hr {
     gap: 8px;
 }
 
-.brano,
-.audio {
-    width: 25%;
+.brano {
+    width: 15%;
 }
 
 .play {
     justify-content: center;
     flex-grow: 1;
     width: 50%;
+}
+.audio {
+    width: 35%;
+    gap: 8px;
+    justify-content: center;
+    align-items: center;
 }
 
 .icon {
@@ -334,7 +339,7 @@ hr {
 .text-img-footer{
     justify-content: flex-start;
     align-items: center;
-    width: 30%;
+    width: 70%;
 }
 .text-img-footer ul{
    
@@ -405,12 +410,7 @@ color: white;
 
 /*  */
 
-.audio {
-    width: 20%;
-    gap: 8px;
-    justify-content: center;
-    align-items: center;
-}
+
 
 /******************/
 /****** HOVER ******/
@@ -687,7 +687,7 @@ span.name:hover {
         gap: 0px
     }
 
-    .brano,
+    
     .play {
         max-width: 40%;
     }
@@ -889,7 +889,7 @@ span.name:hover {
     .text-img-footer{
         justify-content: flex-start;
         align-items: center;
-        width: 30%;
+        width: 80%;
     }
     .text-img-footer ul{
        
@@ -955,8 +955,6 @@ span.name:hover {
     }
     /* FOOTER */
 
-    .text-img-footer {
-        width: 20%;
-    }
+  
 }
 
